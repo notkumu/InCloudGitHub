@@ -131,8 +131,8 @@ class GitHubScanner:
                 print(f"🔍 搜索关键词: {keyword}")
                 self.wait_for_rate_limit()
                 
-                # 搜索代码
-                query = f'{keyword} in:file language:python'
+                # 搜索代码，按最近更新时间排序
+                query = f'{keyword} in:file language:python sort:updated'
                 results = self.github.search_code(query, order='desc')
                 
                 # 从代码搜索结果中提取仓库
