@@ -94,17 +94,10 @@ SENSITIVE_PATTERNS = [
 
 # GitHub搜索关键词
 AI_SEARCH_KEYWORDS = [
-    'openai api',
-    'anthropic claude',
-    'gpt api',
-    'AI_API_KEY',
-    'ANTHROPIC_AUTH_TOKEN',
-    'chat_api_key',
-    'apiKey',
-    'sk-ant-',
-    'sk-proj-',
-    'OPENAI_API_KEY',
-    'chatApiKey',
+    '"sk-" "deepseek"',
+    'DEEPSEEK_API_KEY',
+    'DEEPSEEK_KEY'
+    '"sk-" "api.deepseek.com"'
 ]
 
 # 要排除的文件扩展名
